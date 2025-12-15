@@ -1,0 +1,8 @@
+{
+  "name": "AIoT Smart Monitor",
+  "description": "Enterprise-grade multimodal intelligent regulatory platform for managing AI models, devices, and monitoring rules.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

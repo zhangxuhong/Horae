@@ -1,0 +1,34 @@
+proxy-groups:
+  - name: LLMs
+    type: url-test
+    include-all: true
+    filter: "(?i)jp|台湾S|日本S"
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+
+rules:
+  # ===== ChatGPT / OpenAI =====
+  - DOMAIN-SUFFIX,chatgpt.com,LLMs
+  - DOMAIN-SUFFIX,openai.com,LLMs
+  - DOMAIN-SUFFIX,oaistatic.com,LLMs
+  - DOMAIN-SUFFIX,oaiusercontent.com,LLMs
+
+  # ===== Gemini / AI =====
+  - DOMAIN-SUFFIX,gemini.google.com,LLMs
+  - DOMAIN-SUFFIX,ai.google.dev,LLMs
+
+  # ===== YouTube =====
+  - DOMAIN-SUFFIX,youtube.com,LLMs
+  - DOMAIN-SUFFIX,ytimg.com,LLMs
+  - DOMAIN-SUFFIX,googlevideo.com,LLMs
+
+  # ===== Gmail =====
+  - DOMAIN-SUFFIX,gmail.com,LLMs
+  - DOMAIN-SUFFIX,mail.google.com,LLMs
+
+  # ===== Google 通用服务 =====
+  - DOMAIN-SUFFIX,googleapis.com,LLMs
+  - DOMAIN-SUFFIX,gstatic.com,LLMs
+  - DOMAIN-SUFFIX,googleusercontent.com,LLMs
+  - DOMAIN-SUFFIX,ggpht.com,LLMs
+  - DOMAIN-SUFFIX,google.com,LLMs

@@ -1,12 +1,6 @@
 
 
 proxy-groups:
-  - name: 🔰 选择节点 #!replace
-    type: url-test
-    include-all: true
-    exclude-filter: "(?i)^direct$"
-    url: http://www.gstatic.com/generate_204
-    interval: 300
   - name: LLMs
     type: url-test
     include-all: true

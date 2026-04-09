@@ -1,7 +1,7 @@
 
 
 proxy-groups:
-  - name: 🔰 选择节点
+  - name: 🔰 选择节点 #!replace
     type: url-test
     include-all: true
     exclude-filter: "(?i)^direct$"

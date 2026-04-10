@@ -1,4 +1,6 @@
-
+name: LLMs代理覆写
+desc: LLMs代理覆写
+icon: https://fastly.jsdelivr.net/gh/clash-verge-rev/clash-verge-rev.github.io@main/docs/assets/icons/chatgpt.svg
 
 proxy-groups:
   - name: LLMs
